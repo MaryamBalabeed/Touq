@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,73 +9,108 @@
     <!-- Link style.css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link boostrap | css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- Link icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Link Css Animate On Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
 </head>
+
 <body>
-    <!-------Nav Bar Start -------->
-    <nav class="navbar navbar-expand-sm  fixed-top navbar-light">
-        <div class="container">
-            <img src="touq-logo.png" width="30" height="30" alt="">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav center-block mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">الصفحة الرئيسية  <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">عن طوق</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">خدماتنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">اتصل  بنا</a>
-                    </li>
-                
+    <!------ === HEADER === ------>
+    <header>
+        <div class="header-container">
+            <div class="header-nav">
+                <h4>To download profile click <a href="touq profile.pdf" download> here</a></h4>
+            </div>
+            <div class="header-video text-up">
+                <video autoplay muted loop playinline>
+                    <source src="touq-video.mp4" type="video/mp4">
+                </video>
+                <div class="header-text text-down">
+                    <p data-aos="zoom-in" class="title-row hr-login-button-row">
+                        
+                        Touq Media Co </p>            
+                </div>
+              
+            </div>
+           
+
+        </div>
+    </header>
+
+    <!------ === BODY === ------>
+    <section>
+        <div class="body-container">
+            <div class="section-1">
+                <div class="container">
+                 
+                    <div class="s1-d1">
+                        
+                        <p>أعيش بين شعب جبار وعظم , لدى السعوديين همة مثل جبل طويق لن تنكسر إلااذا انهد هذا الجبل وتساوى بالأرض</p>
+                        <small>ولي العهد السعودي محمد بن tسلمان بن عبدالعزيز </small>
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="section-2">
+                <div class="container">
+                    <div class="s2-d1" ></div>
+                    
+                    <div class="s2-d2"></div>
+
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="container"></div>
+            </div>
+            <div class="section-4">
+                <div class="container"></div>
+            </div>
+            <div class="section-5">
+                <div class="container"></div>
+            </div>
+            <div class="section-6">
+                <div class="container"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------ === FOOTER === ------>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <ul>
+                    <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <!-------Nav Bar End ---------->
-    
-    <section>
-        <video autoplay loop   class="touq-vedio" src="touq-video.mp4" >   
-        </video>
-        <div class="sticky-top bg-white hidden-spacer"></div>
-        <div class="container">
-            <div class="d" data-aos="fade-right">
-           
-            </div>
-            <div class="d" data-aos="fade-left">
-           
-            </div>
-
-        </div>
-       
-    </section>
-    
-    <section>
-    
-    </section>
+    </footer>
 
 
 
 
+
+    <!-- ---------------------- Load Scripts --------------------- -->
     <!-- jQuery cdn  -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- link javaScript -->
-    <script src="./javascript/script.js"></script> 
+    <script src="./javascript/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <!-- Link Script of Animate On Scroll Library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <!-- Link Script of Animate On Scroll Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
+
 </html>
