@@ -9,6 +9,18 @@ header{
   text-align: center;
 
 }
+/* ---------------- Sart of burger menue ----------- */
+
+
+
+
+
+
+
+
+
+
+/* --------------------End of hamburger menue ----------*/
 .header-container {
   width: 100%;
   max-width: 100%;
@@ -185,11 +197,13 @@ padding:30px;
 }
 .s1-d2 img{
   display: flex; 
+  position: relative;
+  margin-top: 320px;
   width: 250px ;
   height: 400px;
   max-height: 400px;
   max-width:250px;
-  z-index: 5;
+  z-index: 1;
   
 }
 
@@ -208,15 +222,109 @@ padding:30px;
     display: flex;
   }
 }
-
+/* ------------- section 2 -------------- */
 .section-2{
   display: flex;
   background-color: rgb(230, 186, 92);
   width: 100%;
   height: 400px;
   justify-content: center;
+}
+.s2-d1{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+ 
+}
+.s2-d1 h1{
+  color: #ad4c65;
+  z-index: 10;
+}
+.s2-d1 p{
+  padding:30px;
+  margin: 40px;
+}
+
+.s2-d2{
+  display: flex;
+  background-color: dodgerblue;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 
 }
+
+@media (max-width: 1287px) {
+  .s2-d1 p{
+    padding:20px;
+    margin: 0;
+   
+  }
+}
+@media (max-width: 675px) {
+  .section-2{
+    height: 700px;
+  }
+  .section-2 .container {
+    flex-direction: column-reverse;
+  }
+  .s2-d1{
+    height: 60%;
+    
+  }
+  .s2-d2{
+    height: 50%;
+  }
+  .s1-d2 img{
+    margin-top: 200px;
+    width: 230px;
+    max-width: 300px;
+    z-index: 1;
+  }
+  .s2-d1 h1{
+    color: #ad4c65;
+   
+    margin: 0;
+  }
+  .s2-d1 p{
+    padding:10px;
+    margin: 0;
+   
+  }
+}
+
+@media (max-width: 285px) {
+  .section-2 .container {
+    flex-direction: column-reverse;
+  }
+  .s2-d1{
+    height: 50%;
+    
+  }
+  .s2-d2{
+    height: 50%;
+  }
+  .s1-d2 img{
+    margin-top: 200px;
+    width: 230px;
+    max-width: 300px;
+    z-index: 1;
+  }
+
+ 
+ 
+}
+/* ------------- section 3 -------------- */
 .section-3{
   display: flex;
   background-color: rgb(202, 202, 202);
@@ -224,6 +332,151 @@ padding:30px;
   height: 400px;
   justify-content: center;
 }
+
+.section-3 .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-top:30px;
+  color:#fff;
+  font-family:'Roboto';
+  font-size:36px;
+  font-weight:100;
+  overflow:hidden;
+  animation:bg 5s linear infinite;
+}
+
+.dropping-texts {
+  display: inline-block;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 36px;
+  vertical-align: -2px; 
+}
+
+.dropping-texts > div {
+  font-size:0px;
+  opacity:0;
+  color: #ad4c65;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+ 
+  font-weight:300;   
+  box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+
+
+
+@keyframes bg {
+  0% {background: #ddd37a;}
+  3% {background: #c0b577;}
+  20% {background: #f0edd7;}
+  23% {background: #caa889;}
+  40% {background: #d9cddf;}
+  43% {background: #b5bdad;}
+  60% {background: #d5dfca;}
+  63% {background: #d6b2af;}
+  80% {background: #f5cbc8;}
+  83% {background: #d3bebd;}
+  100% {background: #aaa5a5;}
+}
+
+@media (max-width: 1287px) {
+
+}
+@media (max-width: 675px) {
+  .section-2{
+    height: 400px;
+  }
+  .section-3 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  div .dropping-texts {
+    justify-content: center;
+    align-items: center;
+
+  }
+  .dropping-texts {
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+    margin-bottom: 30px;
+  }
+  
+  
+}
+
+@media (max-width: 285px) {
+  .section-3 .container {
+    flex-direction: column;
+   
+  }
+  
+}
+ 
+/* ------------- section 4 -------------- */
 .section-4{
   display: flex;
   background-color: rgb(255, 182, 182);
@@ -231,6 +484,102 @@ padding:30px;
   height: 400px;
   justify-content: center;
 }
+
+.s4-d1{
+  display: flex;
+  flex-direction: column;
+  background-color: dodgerblue;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+ 
+}
+.s4-d1 h1{
+  color: #ad4c65;
+  z-index: 10;
+}
+.s4-d1 p{
+  padding:30px;
+  margin: 40px;
+}
+.splide{
+  background-color: #c0b577;
+  justify-content: center;
+ display: flex;
+ width: 50%;
+ align-items: center;
+ height: 95%;
+ 
+}
+.splide__slide{
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 95%
+
+}
+
+.s4-d2{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+@media (max-width: 1287px) {
+  .s4-d1 p{
+    padding:20px;
+    margin: 0;
+   
+  }
+}
+@media (max-width: 675px) {
+  .section-4{
+    height: 400px;
+  }
+  .section-4 .container {
+    flex-direction: column-reverse;
+  }
+  .s4-d1{
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+  .s4-d2{
+    height: 50%;
+  }
+
+
+  }
+
+
+@media (max-width: 285px) {
+  .section-4 .container {
+    flex-direction: column-reverse;
+  }
+  .s4-d1{
+    height: 50%;
+    
+  }
+  .s4-d2{
+    height: 50%;
+  }
+}
+/* ------------- section 5 -------------- */
 .section-5{
   display: flex;
   background-color: rgb(164, 248, 199);
@@ -238,7 +587,22 @@ padding:30px;
   height: 400px;
   justify-content: center;
 }
-
+/* ------------- section 6 -------------- */
+.section-6{
+  display: flex;
+  background-color: rgb(15, 77, 40);
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+}
+/* ------------- section 6 -------------- */
+.section-7{
+  display: flex;
+  background-color: rgb(105, 110, 107);
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+}
 
 /* -------- Footer --------- */
 
