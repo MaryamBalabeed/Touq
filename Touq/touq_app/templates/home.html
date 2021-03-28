@@ -1,0 +1,736 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title>Touq</title>
+    <!-- Link style.css -->
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+    <!-- Link boostrap | css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <!-- Link icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link Css Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Style Sheet of jsDelivr Library  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <!-- Script CDN of jsDelivr Library  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
+
+
+    <!-- Script CDN of Swiper Library  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+{% comment %} link slick stylesheet for logo slider {% endcomment %}
+    
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+
+
+
+
+</head>
+
+<body>
+    <style>
+.menu-h{
+  justify-content: flex-end;
+   align-items: flex-end;
+  
+}
+.s1-d1 p{
+     font-size: 20px;
+} 
+
+#spin:after {
+  content:"";
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0% { content:"خدمة 1"; }
+  10% { content:"خدمة 2 "; }
+  20% { content:"خدمة 3"; }
+  30% { content:"خدمة 4"; }
+  40% { content:"خدمة 5"; }
+  50% { content: "خدمة 6"; }
+  60% { content: "خدمة 7"; }
+  70% { content: "خدمة 8"; }
+  80% { content: "خدمة 9"; }
+  90% { content: "خدمة 10 "; }
+}
+.header-nav h6 a{
+
+  text-decoration: none;
+  color: #7c6552;
+  font-weight: bolder;
+  
+}
+.header-nav h6 a:hover{
+
+  text-decoration: none;
+  color: #f5f2f0;
+  font-weight: bolder;
+  
+}
+.menu-overlay{
+   
+    width:100%;
+}
+.m{
+
+ width:100%;
+}
+.mmm{
+    justify-content: center;
+}
+
+.logo-overlay {
+  display: flex;
+  position: fixed;
+  margin-top:40px ;
+  height: auto;
+  z-index: 9;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+.bs{
+    display:flex;
+    justify-content:left;
+     
+ padding-left: 60px;
+  cursor: pointer;
+}
+.bs a{
+    width: 120px;
+    background-color: d8b397; 
+  color: #162821;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 3px;
+}
+.bs a:hover{
+    opacity: 0.8;
+}
+.section-5{
+    
+    height:250px;
+}
+.container-5{
+ display: flex;
+  font-size: 14px;
+  margin: 0 auto ;
+   justify-content: center;
+     align-items:center;
+  width: 90%;
+  max-height: 100%;
+  flex-direction:column ;
+     
+}
+.s-cont{
+    width: 100%;
+     display: flex;
+     flex-direction:row ;
+     justify-content: center;
+     justify-content:space-around;
+     align-items:center;
+     height:150px;
+   
+    background-color:#d8b397;
+}
+.c{
+    
+    display:flex;
+     flex-direction:column  ;
+     justify-content: center;
+     align-items:center;
+     font-size:
+   
+    
+}
+.counter{
+    color:white;
+
+.co{
+    display:flex;
+    flex-direction: column;
+    
+    background-color:red;
+
+}
+
+.container-6{
+    display: flex;
+  font-size: 14px;
+  flex-direction:column;
+  margin: 0 auto ;
+   justify-content: center;
+     align-items:center;
+  width: 100%;
+  max-height: 100%;
+     
+}
+{% comment %} ----------------------slider logo {% endcomment %}
+/* Logo Slider */
+
+.logo-slider {
+	background: white;
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.logo-slider::before, .logo-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 175px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.logo-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+	left: 0;
+	top: 0;
+}
+
+.logo-slider .logo-slide-track {
+	-webkit-animation: logo-scroll 60s linear infinite;
+	animation: logo-scroll 60s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(250px * 14);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+	height: 150px;
+	width: 250px;
+	padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+</style>
+
+    <header>
+        <div class="header-container">
+            <div class="header-nav">
+                <h6> لتحميل الملف التعريفي لطوق <a href="touq profile.pdf" download> اضغط هنا</a></h6>
+            </div>
+
+            <div class="header-video text-up">
+
+
+                <div class="box logo-overlay nav-fixed nav-active">
+                
+               <img src="{% static './image/touq-logo.png' %}" "" class="logo" width="150px"> 
+
+ 
+
+
+
+
+
+                </div>
+{% comment %} -------------------- {% endcomment %}
+                <div class="box menu-overlay  " id="myTopnav">
+               
+<nav class="m navbar navbar-expand-lg navbar-light ">
+                
+  <div class="mmm collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ">
+    <li class="nav-item active">
+        <a class="nav-link text-white" href="{% url 'emplyment' %}">التوظيف <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#section-2">تواصل </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#section-2">شركاء النجاح</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#section-3">أعمالنا</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#section-2">عن طوق</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+                  
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} -------------- {% endcomment %}
+                <!-- burger menu  -->
+              
+                <video autoplay muted loop playinline>
+
+                    <source src="{% static './video/touq-video.mp4' %}"  type="video/mp4">
+                </video>
+                <!-- <p data-aos="zoom-in" class="title-row hr-login-button-row">
+                            
+                    Touq Media Co </p>  -->
+                <div class="header-text text-down">
+                    <div class="title-row hr-login-button-row">
+                        <svg viewBox="0 0 960 300">
+                            <symbol id="s-text">
+
+                                <text data-aos="zoom-in" class="title-row hr-login-button-row" text-anchor="middle"
+                                    x="50%" y="80%">Touq Meadia CO</text>
+                            </symbol>
+                            <g class="g-ants">
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                            </g>
+                        </svg>
+                        <div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+    </header>
+
+    <!--- - - - - -  === BODY ===  - - - -  - - -->
+    <section>
+        <div class="body-container">
+            <div class="section-1">
+                <div class="container">
+                    <div class="s1-d1">
+                        <p>
+                            <b>أعيش بين شعب جبار وعظيم , لدى السعوديين همة مثل جبل طويق لن تنكسر إلااذا انهد هذا الجبل
+                                وتساوى
+                                بالأرض
+                            </b>
+                            <br>
+
+                        </p>
+                        <small>ولي العهد السعودي محمد بن سلمان بن عبدالعزيز </small>
+
+                    </div>
+                    <div class="s1-d2"><img style="width:100%" src="{% static './image/mbs-p.jpg' %}"></div>
+                </div>
+            </div>
+            <br>
+            <div class="section-2" id="section-2">
+                <div class="container">
+                    <div class="s2-d1">
+                        <h1>عن طوق </h1>
+                        <p>في طوق نؤمن بأن الوصول للنجاح يحتاج أن يكون وفق رؤية طموحة ومتكاملة. لذا , كانت البداية
+                            بالتركيز على أهداف أكبر تعتمد على الإبتكار والتميز لخلق حلول إبداعية تتناسب مع طموحات الرؤية
+                            , لذلك قررنا في طوق السعي وراء أحلامنا وطموحاتنا بواسطة كفاءات وعقول مبدعة لتحقيق تطلuات
+                            العملاء</p>
+                    </div>
+
+                    <div class="s2-d2"></div>
+
+                </div>
+            </div>
+            <div class="section-3" id="section-3">
+                <div class="container">
+                    <h1>خدمات طوق
+                        <span id="spin" ></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="section-4" id="section-4">
+                <div class="container">
+                    <div class="s4-d1">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper" >
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h5>البحوث والأستراتيجيات</h5>
+                                </div>
+                                <br>
+                                <div class="swiper-slide">خدمات الموقع والتطبيقات</div>
+                                <br>
+                                <div class="swiper-slide">تنظيم الفعاليات</div>
+                                <br>
+                                <div class="swiper-slide">صناعة الهوية</div>
+                                <br>
+                                <div class="swiper-slide">التسويق الألكتروني</div>
+                                <br>
+                                <div class="swiper-slide "style="display:flex;
+    flex-direction: column;
+    padding:30px;
+    background-color:red;">
+                                <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
+                                
+                                <h6>الإنتاج المرئي</h6>
+                                 </div>
+                                 <br>
+                                <div class="swiper-slide">إدارة المؤثرين</div>
+                                <br>
+                                <div class="swiper-slide">خدمة سبريد</div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="s4-d2">
+                        <h1>خدماتنا </h1>
+                        <p>ماذا يمكن أن تقدم طوق؟<br>ماهي المجالات التي تعمل من خلالها لتحقق النجاحات ؟</p>
+                        <div class="bs"> <a type="button" class="btn" href="{% url 'ourBusiness' %}">أعمالنا</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section-5">
+            
+                <div class="container-5">
+                   <div class="s-cont">
+                    <div class="c">
+                    <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
+                        <p style="margin:0"><span class="counter">250</span><span style="font-size:20px;">  +<span></p>
+                        <p class="stats-text">العملاء</p>
+                    </div>
+
+
+                    <div class="c">
+                         <i class="fa fa-magic" style="font-size:40px;margin-top:16px;"></i>
+                        <p style="margin:0"><span class="counter" >1001</span><span style="font-size:20px;">  +<span></p>
+                        <p class="stats-text">التصاميم الأبداعية</p>
+                    </div>
+
+
+                    <div class="c">
+                    <i class="fa fa-cogs" style="font-size:40px; margin-top:16px;"></i>
+                        
+                        <p style="margin:0"><span class="counter" >300</span><span style="font-size:20px;">  +<span></p>
+                        <p class="stats-text">المشاريع</p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+        
+            
+             <div class="section-6">
+             <div class="container">
+             <div class="s-logo responsive">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+  </div>
+
+                  </div>
+        </div>
+  
+   
+
+        <div class="section-7">
+             <div class="container-5">
+                     <h1 style="text-align:right;padding-bottom:30px;">تواصل</h1>
+                   <div class="s-cont">
+                   
+                    <div class="c">
+                    <i class="fa fa-envelope" style="font-size:40px;margin-top:16px; color:white;"></i>
+                
+                        <p style="font-size:20px; font-weight:bolder">example@ecample.com</p>
+                    </div>
+
+
+                    <div class="c">
+                         <i class="fa fa-phone" style="font-size:40px;margin-top:16px; color:white;"></i>
+                       
+                        <p style="font-size:20px; font-weight:bolder">+9665000000</p>
+                    </div>
+
+
+                    <div class="c">
+                    <i class="fa fa-at" style="font-size:40px;margin-top:16px; color:white;"></i>
+                        
+                        
+                        <p style="font-size:20px; font-weight:bolder">touq</p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+       
+        </div>
+    </section>
+
+
+
+    <!-- - - - -  === FOOTER ===  - - - - - -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <ul>
+                    <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    {% comment %} <!-- ---------------------- Load Scripts --------------------- --> {% endcomment %}
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
+
+
+    <!-- jQuery cdn  -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- link javaScript -->
+    <script>
+
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+$(this).text(); 
+
+{% comment %} Math.ceil(now) {% endcomment %}
+}
+});
+});
+$('.responsive').slick({
+dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]})
+</script>
+    <script src="{% static './js/script.js' %}"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <!-- Link Script of Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <!-- Link Script of slick Library -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+				
+				
+
+<script>
+var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+  
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+  
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+  
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+  
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+  
+      if (this.isDeleting) { delta /= 2; }
+  
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+  
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+  
+    window.onload = function () {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-left: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };
+    {% comment %} ------------------------slidr logo {% endcomment %}
+     $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  
+    
+    </script>
+</body>
+
+</html>
