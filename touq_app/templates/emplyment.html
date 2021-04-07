@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}التوظيف{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container-c" >
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+ 
+ ;}
+input[type=text], input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form-group{
+width:100%;
+
+ 
+}
+button {
+ 
+  background-color: #162821; 
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 3px;
+  
+  cursor: pointer;
+
+  
+}
+input{
+  width:100%;
+}
+textarea{
+  width:100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container-c {
+  padding: 100px;
+  
+  display:flex; justify-content: center;
+
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+	 width: 30px;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+<div  style="margin-top:70px;  justify-content: center; text-align: right;">
+		<h1 >عشانك مبدع هذي الصفحة  فتحت معك</h1>
+		<h4>أثبت لنا .. عرفنا عليك </h4>
+		<p>
+			
+		</p>
+		<form method="POST" class="form-group" enctype="multipart/form-data">
+        {% csrf_token %}
+            {{ form|crispy }}
+            <button calss="btn-e" type="btn btn-success">إرسال</button>
+        </form>
+    </div>
+{% endblock %}
