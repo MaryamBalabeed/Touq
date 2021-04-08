@@ -708,5 +708,16 @@ footer {
   color: #331e21;
 }
 
+/* to make the logos in the center of the div  */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+html,
+body {
+  height: 100%
+}
+
+/* the size of the logos */
+.item{
+  width: 250px;
+}
 
 

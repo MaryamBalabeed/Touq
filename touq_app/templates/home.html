@@ -9,7 +9,8 @@
     <!-- Link style.css -->
     <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
     <!-- Link boostrap | css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Link icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -25,157 +26,203 @@
     <!-- Script CDN of Swiper Library  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  
 
-{% comment %} link slick stylesheet for logo slider {% endcomment %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
 
+    {% comment %} link slick stylesheet for logo slider {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
 
 </head>
 
 <body>
     <style>
-.menu-h{
-  justify-content: flex-end;
-   align-items: flex-end;
-  
-}
-.s1-d1 p{
-     font-size: 20px;
-} 
+        .menu-h {
+            justify-content: flex-end;
+            align-items: flex-end;
 
-#spin:after {
-  content:"";
-  animation: spin 8s linear infinite;
-}
-@keyframes spin {
-  0% { content:"خدمة 1"; }
-  10% { content:"خدمة 2 "; }
-  20% { content:"خدمة 3"; }
-  30% { content:"خدمة 4"; }
-  40% { content:"خدمة 5"; }
-  50% { content: "خدمة 6"; }
-  60% { content: "خدمة 7"; }
-  70% { content: "خدمة 8"; }
-  80% { content: "خدمة 9"; }
-  90% { content: "خدمة 10 "; }
-}
-.header-nav h6 a{
+        }
 
-  text-decoration: none;
-  color: #7c6552;
-  font-weight: bolder;
-  
-}
-.header-nav h6 a:hover{
+        .s1-d1 p {
+            font-size: 20px;
+        }
 
-  text-decoration: none;
-  color: #f5f2f0;
-  font-weight: bolder;
-  
-}
-.menu-overlay{
-   
-    width:100%;
-}
-.m{
+        #spin:after {
+            content: "";
+            animation: spin 8s linear infinite;
+        }
 
- width:100%;
-}
-.mmm{
-    justify-content: center;
-}
+        @keyframes spin {
+            0% {
+                content: "خدمة 1";
+            }
 
-.logo-overlay {
-  display: flex;
-  position: fixed;
-  margin-top:40px ;
-  height: auto;
-  z-index: 9;
-  width: 100%;
-  justify-content: center;
-  align-items: center; 
-}
-.bs{
-    display:flex;
-    justify-content:left;
-     
- padding-left: 60px;
-  cursor: pointer;
-}
-.bs a{
-    width: 120px;
-    background-color: d8b397; 
-  color: #162821;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: 3px;
-}
-.bs a:hover{
-    opacity: 0.8;
-}
-.section-5{
-    
-    height:250px;
-}
-.container-5{
- display: flex;
-  font-size: 14px;
-  margin: 0 auto ;
-   justify-content: center;
-     align-items:center;
-  width: 90%;
-  max-height: 100%;
-  flex-direction:column ;
-     
-}
-.s-cont{
-    width: 100%;
-     display: flex;
-     flex-direction:row ;
-     justify-content: center;
-     justify-content:space-around;
-     align-items:center;
-     height:150px;
-   
-    background-color:#d8b397;
-}
-.c{
-    
-    display:flex;
-     flex-direction:column  ;
-     justify-content: center;
-     align-items:center;
-     font-size:
-   
-    
-}
-.counter{
-    color:white;
+            10% {
+                content: "خدمة 2 ";
+            }
 
-.co{
-    display:flex;
-    flex-direction: column;
-    
-    background-color:red;
+            20% {
+                content: "خدمة 3";
+            }
 
-}
+            30% {
+                content: "خدمة 4";
+            }
 
-.container-6{
-    display: flex;
-  font-size: 14px;
-  flex-direction:column;
-  margin: 0 auto ;
-   justify-content: center;
-     align-items:center;
-  width: 100%;
-  max-height: 100%;
-     
-}
+            40% {
+                content: "خدمة 5";
+            }
+
+            50% {
+                content: "خدمة 6";
+            }
+
+            60% {
+                content: "خدمة 7";
+            }
+
+            70% {
+                content: "خدمة 8";
+            }
+
+            80% {
+                content: "خدمة 9";
+            }
+
+            90% {
+                content: "خدمة 10 ";
+            }
+        }
+
+        .header-nav h6 a {
+
+            text-decoration: none;
+            color: #7c6552;
+            font-weight: bolder;
+
+        }
+
+        .header-nav h6 a:hover {
+
+            text-decoration: none;
+            color: #f5f2f0;
+            font-weight: bolder;
+
+        }
+
+        .menu-overlay {
+
+            width: 100%;
+        }
+
+        .m {
+
+            width: 100%;
+        }
+
+        .mmm {
+            justify-content: center;
+        }
+
+        .logo-overlay {
+            display: flex;
+            position: fixed;
+            margin-top: 40px;
+            height: auto;
+            z-index: 9;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bs {
+            display: flex;
+            justify-content: left;
+
+            padding-left: 60px;
+            cursor: pointer;
+        }
+
+        .bs a {
+            width: 120px;
+            background-color: d8b397;
+            color: #162821;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 3px;
+        }
+
+        .bs a:hover {
+            opacity: 0.8;
+        }
+
+        .section-5 {
+
+            height: 250px;
+        }
+
+        .container-5 {
+            display: flex;
+            font-size: 14px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-height: 100%;
+            flex-direction: column;
+
+        }
+
+        .s-cont {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            height: 150px;
+
+            background-color: #d8b397;
+        }
+
+        .c {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size:
 
 
-</style>
+        }
+
+        .counter {
+            color: white;
+
+            .co {
+                display: flex;
+                flex-direction: column;
+
+                background-color: red;
+
+            }
+
+            .container-6 {
+                display: flex;
+                font-size: 14px;
+                flex-direction: column;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-height: 100%;
+
+            }
+    </style>
 
     <header>
         <div class="header-container">
@@ -187,46 +234,48 @@
 
 
                 <div class="box logo-overlay nav-fixed nav-active">
-                
-               <img src="{% static './image/touq-logo.png' %}" "" class="logo" width="150px"> 
 
- 
+                    <img src="{% static './image/touq-logo.png' %}" "" class="logo" width="150px">
+
+
 
 
 
 
 
                 </div>
-{% comment %} -------------------- {% endcomment %}
+                {% comment %} -------------------- {% endcomment %}
                 <div class="box menu-overlay  " id="myTopnav">
-               
-<nav class="m navbar navbar-expand-lg navbar-light ">
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> 
-  <div class="mmm collapse navbar-collapse " id="navbarNav">
-    <ul class="navbar-nav ">
-    <li class="nav-item active">
-        <a class="nav-link text-white" href="{% url 'emplyment' %}">التوظيف <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#section-2">تواصل </a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#section-2">شركاء النجاح</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#section-3">أعمالنا</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link text-white" href="#section-2">عن طوق</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
+                    <nav class="m navbar navbar-expand-lg navbar-light ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="mmm collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="{% url 'emplyment' %}">التوظيف <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="#section-2">تواصل </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="#section-2">شركاء النجاح</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="#section-3">أعمالنا</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white" href="#section-2">عن طوق</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
 
 
-                  
+
                 </div>
 
 
@@ -247,12 +296,12 @@
 
 
 
-{% comment %} -------------- {% endcomment %}
+                {% comment %} -------------- {% endcomment %}
                 <!-- burger menu  -->
-              
+
                 <video autoplay muted loop playinline>
 
-                    <source src="{% static './video/touq-video.mp4' %}"  type="video/mp4">
+                    <source src="{% static './video/touq-video.mp4' %}" type="video/mp4">
                 </video>
                 <!-- <p data-aos="zoom-in" class="title-row hr-login-button-row">
                             
@@ -279,7 +328,7 @@
                     </div>
 
                 </div>
-                
+
     </header>
 
     <!--- - - - - -  === BODY ===  - - - -  - - -->
@@ -320,7 +369,7 @@
             <div class="section-3" id="section-3">
                 <div class="container">
                     <h1>خدمات طوق
-                        <span id="spin" ></span>
+                        <span id="spin"></span>
                     </h1>
                 </div>
             </div>
@@ -330,7 +379,7 @@
                         <!-- Slider main container -->
                         <div class="swiper-container">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper" >
+                            <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <h5>البحوث والأستراتيجيات</h5>
@@ -344,15 +393,15 @@
                                 <br>
                                 <div class="swiper-slide">التسويق الألكتروني</div>
                                 <br>
-                                <div class="swiper-slide "style="display:flex;
+                                <div class="swiper-slide " style="display:flex;
     flex-direction: column;
     padding:30px;
     background-color:red;">
-                                <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
-                                
-                                <h6>الإنتاج المرئي</h6>
-                                 </div>
-                                 <br>
+                                    <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
+
+                                    <h6>الإنتاج المرئي</h6>
+                                </div>
+                                <br>
                                 <div class="swiper-slide">إدارة المؤثرين</div>
                                 <br>
                                 <div class="swiper-slide">خدمة سبريد</div>
@@ -379,29 +428,32 @@
                 </div>
             </div>
             <div class="section-5">
-            
+
                 <div class="container-5">
-                   <div class="s-cont">
-                    <div class="c">
-                    <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
-                        <p style="margin:0"><span class="counter">250</span><span style="font-size:20px;">  +<span></p>
-                        <p class="stats-text">العملاء</p>
-                    </div>
+                    <div class="s-cont">
+                        <div class="c">
+                            <i class="fa fa-group" style="font-size:40px;margin-top:16px;"></i>
+                            <p style="margin:0"><span class="counter">250</span><span style="font-size:20px;"> +<span>
+                            </p>
+                            <p class="stats-text">العملاء</p>
+                        </div>
 
 
-                    <div class="c">
-                         <i class="fa fa-magic" style="font-size:40px;margin-top:16px;"></i>
-                        <p style="margin:0"><span class="counter" >1001</span><span style="font-size:20px;">  +<span></p>
-                        <p class="stats-text">التصاميم الأبداعية</p>
-                    </div>
+                        <div class="c">
+                            <i class="fa fa-magic" style="font-size:40px;margin-top:16px;"></i>
+                            <p style="margin:0"><span class="counter">1001</span><span style="font-size:20px;"> +<span>
+                            </p>
+                            <p class="stats-text">التصاميم الأبداعية</p>
+                        </div>
 
 
-                    <div class="c">
-                    <i class="fa fa-cogs" style="font-size:40px; margin-top:16px;"></i>
-                        
-                        <p style="margin:0"><span class="counter" >300</span><span style="font-size:20px;">  +<span></p>
-                        <p class="stats-text">المشاريع</p>
-                    </div>
+                        <div class="c">
+                            <i class="fa fa-cogs" style="font-size:40px; margin-top:16px;"></i>
+
+                            <p style="margin:0"><span class="counter">300</span><span style="font-size:20px;"> +<span>
+                            </p>
+                            <p class="stats-text">المشاريع</p>
+                        </div>
 
                     </div>
                 </div>
@@ -413,61 +465,63 @@
 
 
         </div>
-        
-         
-
-    
-             <div class="section-6">
-             <div class="container">
-
-  <div  class="owl-carousel owl-theme">
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-  <div class="item"><img src="{% static './image/mbs-p.jpg' %}" alt="Owl Image"></div>
-
-</div>
 
 
 
- </div>
-  </div>
-   
-  
+
+        <div class="section-6">
+            <div class="container h-100 row align-items-center">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    <div class="item"><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="Owl Image"></div>
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+
+
         <div class="section-7">
-             <div class="container-5">
-                     <h1 style="text-align:right;padding-bottom:30px;">تواصل</h1>
-                   <div class="s-cont">
-                   
+            <div class="container-5">
+                <h1 style="text-align:right;padding-bottom:30px;">تواصل</h1>
+                <div class="s-cont">
+
                     <div class="c">
-                    <i class="fa fa-envelope" style="font-size:40px;margin-top:16px; color:white;"></i>
-                
+                        <i class="fa fa-envelope" style="font-size:40px;margin-top:16px; color:white;"></i>
+
                         <p style="font-size:20px; font-weight:bolder">example@ecample.com</p>
                     </div>
 
 
                     <div class="c">
-                         <i class="fa fa-phone" style="font-size:40px;margin-top:16px; color:white;"></i>
-                       
+                        <i class="fa fa-phone" style="font-size:40px;margin-top:16px; color:white;"></i>
+
                         <p style="font-size:20px; font-weight:bolder">+9665000000</p>
                     </div>
 
 
                     <div class="c">
-                    <i class="fa fa-at" style="font-size:40px;margin-top:16px; color:white;"></i>
-                        
-                        
+                        <i class="fa fa-at" style="font-size:40px;margin-top:16px; color:white;"></i>
+
+
                         <p style="font-size:20px; font-weight:bolder">touq</p>
                     </div>
 
-                    </div>
                 </div>
             </div>
-            </div>
         </div>
-       
+        </div>
+        </div>
+
         </div>
     </section>
 
@@ -493,40 +547,46 @@
 
 
 
-  
-   
 
 
- 
- 
+
+
+
+
     <!-- jQuery cdn  -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
-
-        
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
 
 
-   <!-- Logos slider [owl carousel] cdn  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
- 
 
-   
+
+    <!-- Logos slider [owl carousel] cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous"></script>
+
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <!-- Link Script of Animate On Scroll Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-   <!-- Link Script of swiperScroll Library -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- Link Script of swiperScroll Library -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-   <!-- link javaScript -->
-     <script src="{% static './js/script.js' %}"></script>
-    
+    <!-- link javaScript -->
+    <script src="{% static './js/script.js' %}"></script>
+
 
 
 
